@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nightmare</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+}
+
+/* INTRO */
+#intro {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+#intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+#intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#intro-text h1 {
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 30px red;
+}
+
+/* MAIN */
+#main {
+  display: none;
+  text-align: center;
+  padding: 50px;
+}
+
+.section {
+  margin: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <img src="https://cdn.discordapp.com/attachments/1485343330933018816/1486452479385272390/standard_11.gif">
+
+  <div id="intro-text">
+    <h1>NIGHTMARE</h1>
+    <p>Fear the unknown</p>
+  </div>
+</div>
+
+<!-- MAIN SITE -->
+<div id="main">
+
+  <h1>👿 Nightmare 👿</h1>
+
+  <div class="section">
+    <p>Power. Loyalty. Fear.</p>
+  </div>
+
+  <div class="section">
+    <p>Enter the most dominant RP family</p>
+  </div>
+
+  <button class="btn" onclick="window.location.href='https://discord.gg/YOUR-LINK'">
+    Join Now
+  </button>
+
+</div>
+
+<script>
+setTimeout(() => {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("main").style.display = "block";
+}, 4000);
+</script>
+
+</body>
+</html>
